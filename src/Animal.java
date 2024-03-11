@@ -5,6 +5,8 @@ public abstract class Animal {
     protected Size size;
     protected String specialCare;
 
+    public abstract void pet();
+
     @Override
     public String toString() {
         return "Animal{" +
