@@ -14,4 +14,17 @@ public abstract class Input {
             }
         }
     }
+
+    public static int getInt(int min, int max) {
+        int value;
+        while (true) {
+            value = getInt();
+            if (value >= min && value <= max) {
+                return value;
+            }
+            System.out.println("Invalid answer!");
+        }
+    }
+
+
 }
