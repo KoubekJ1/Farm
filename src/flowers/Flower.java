@@ -15,7 +15,7 @@ public abstract class Flower {
     }
 
     public void irrigate() {
-        chanceOfGrowth += 5;
+        chanceOfGrowth += 0.05;
     }
 
     public String getName() {
