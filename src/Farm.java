@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public class Farm {
 
     private ArrayList<Flower> flowers;
+    private ArrayList<Animal> animals;
 
     public Farm() {
         flowers = new ArrayList<>();
