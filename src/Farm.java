@@ -9,6 +9,7 @@ public class Farm {
 
     public Farm() {
         flowers = new ArrayList<>();
+        animals = new ArrayList<>();
     }
 
     public void addFlower(Flower flower) {
