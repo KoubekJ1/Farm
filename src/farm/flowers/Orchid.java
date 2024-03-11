@@ -1,4 +1,4 @@
-package flowers;
+package farm.flowers;
 
 public class Orchid extends Flower {
     public Orchid() {

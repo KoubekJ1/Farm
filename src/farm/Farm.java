@@ -1,4 +1,8 @@
-import flowers.Flower;
+package farm;
+
+import farm.animals.Animal;
+import farm.animals.Size;
+import farm.flowers.Flower;
 
 import java.util.ArrayList;
 

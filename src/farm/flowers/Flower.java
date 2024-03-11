@@ -1,4 +1,4 @@
-package flowers;
+package farm.flowers;
 
 public abstract class Flower {
 
@@ -52,7 +52,7 @@ public abstract class Flower {
 
     @Override
     public String toString() {
-        return "flowers.Flower{" +
+        return "farm.flowers.Flower{" +
                 "name='" + name + '\'' +
                 ", price=" + price +
                 ", neededArea=" + neededArea +
