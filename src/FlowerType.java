@@ -3,5 +3,7 @@ public enum FlowerType {
     SUNFLOWER,
     DAISY,
     ORCHID,
-    TULIP
+    TULIP,
+    LAVENDER,
+    MARIGOLD
 }
