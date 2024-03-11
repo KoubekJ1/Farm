@@ -26,5 +26,10 @@ public abstract class Input {
         }
     }
 
-
+    public static int question(String[] answers) {
+        for (int i = 0; i < answers.length; i++) {
+            System.out.println((i + 1) + ") " + answers[i]);
+        }
+        return getInt(1, answers.length);
+    }
 }
