@@ -1,7 +1,8 @@
+package flowers;
+
 public abstract class Flower {
 
     protected String name;
-    protected FlowerType type;
     protected double price;
     protected double neededArea;
     protected double chanceOfGrowth;
@@ -12,14 +13,6 @@ public abstract class Flower {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public FlowerType getType() {
-        return type;
-    }
-
-    public void setType(FlowerType type) {
-        this.type = type;
     }
 
     public double getPrice() {
@@ -48,9 +41,8 @@ public abstract class Flower {
 
     @Override
     public String toString() {
-        return "Flower{" +
+        return "flowers.Flower{" +
                 "name='" + name + '\'' +
-                ", type=" + type +
                 ", price=" + price +
                 ", neededArea=" + neededArea +
                 ", chanceOfGrowth=" + chanceOfGrowth +
