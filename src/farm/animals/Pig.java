@@ -3,7 +3,7 @@ package farm.animals;
 public class Pig extends Animal {
 
     public Pig(String name) {
-        super("Pig", name, Size.BIG, "Bath regularly");
+        super("Mammal", name, Size.BIG, "Bath regularly");
     }
 
     @Override
