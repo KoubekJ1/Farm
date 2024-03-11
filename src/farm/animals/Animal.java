@@ -7,6 +7,13 @@ public abstract class Animal {
     protected Size size;
     protected String specialCare;
 
+    protected Animal(String type, String name, Size size, String specialCare) {
+        this.type = type;
+        this.name = name;
+        this.size = size;
+        this.specialCare = specialCare;
+    }
+
     public abstract void pet();
 
     public String getType() {
