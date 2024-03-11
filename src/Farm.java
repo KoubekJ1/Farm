@@ -1,3 +1,5 @@
+import flowers.Flower;
+
 import java.util.ArrayList;
 
 public class Farm {
@@ -9,13 +11,15 @@ public class Farm {
     }
 
     public void addFlower(Flower flower) {
-        ArrayList<FlowerType> flowerTypes = new ArrayList<>();
+        ArrayList<Class> flowerTypes = new ArrayList<>();
+        double farmSize = 0;
         for (Flower flower1 : flowers) {
-            if (!flowerTypes.contains(flower1.getType())) {
-                flowerTypes.add(flower1.getType());
+            farmSize += flower1.getNeededArea();
+            if (!flowerTypes.contains(flower1.getClass())) {
+                flowerTypes.add(flower1.getClass());
             }
         }
-        if (flowerTypes.size() < 5 || flowerTypes.contains(flower.getType())) {
+        if ((flowerTypes.size() < 5 || flowerTypes.contains(flower.getClass())) && farmSize + flower.getNeededArea() < 100) {
             flowers.add(flower);
         }
     }
