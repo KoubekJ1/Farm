@@ -46,4 +46,17 @@ public class Farm {
         }
         animals.add(animal);
     }
+
+    public void sellAnimal(Animal animal) {
+        animals.remove(animal);
+    }
+
+    public void sellAnimal(String name) {
+        for (Animal animal : animals) {
+            if (animal.getName().equals(name)) {
+                sellAnimal(animal);
+                break;
+            }
+        }
+    }
 }
